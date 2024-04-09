@@ -1,14 +1,12 @@
-# Pivigo Data Science Template
+# S2DS NLP project  
 
-_A recommended minimal project structure for doing and sharing data science work._
-
-
-This template is based on the good work from the [Cookiecutter project](http://drivendata.github.io/cookiecutter-data-science/). Please visit the website for a more detailed explanation of how to get the most out of the template and best practices in general. In particular, we strongly suggest that you work in the context of a virtual environment for this project. Please feel free to change the directory structure as you wish. 
-
-The structure we have given you is a lightweight version of the full cookiecutter-data-science template. The full version includes a number of functionalities that are often not needed, such as a Makefile and setup scripts, as well as a .env file for holding keys. In some cases you may want this added functionality and may, therefore, substitute this template for the original cookiecutter-data-science template.
+_The NLP project that was created to assess timeliness of the media content created by the Client._
 
 
-The directory structure of your new project looks like this: 
+The project was created as part of an Science2DataScience internship by the group of 5 scientists.
+
+
+The directory structure of the project looks like this: 
 
 ```
 ├── README.md          <- The top-level README for developers using this project.
@@ -20,20 +18,23 @@ The directory structure of your new project looks like this:
 │
 ├── models             <- Trained and serialized models, model predictions, or model summaries
 │
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
+├── notebooks          <- pipeline1_main and pipeline2_main are the main Jupyter notebooks that contain the working model
+│   ├── outdated       <- draft notebooks of team members
+│   └── supplementary  <- Additional 'clean' notebooks for the project.                  
 │
 ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
 │
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
+├── reports            
+│   ├── illustrations  <- .jpg files that are used in main notebooks 
+│   └── figures        <- Generated graphics and figures that are used in notebook
 │
 ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
 │                         generated with `pip freeze > requirements.txt`
 │
 ├── src                <- Source code for use in this project.
     ├── data           <- Scripts to download or generate data
+    │   ├── make_datasets_allpytrends.py
+    │   ├── preprocess_keywords.py
     │   └── make_dataset.py
     │
     ├── features       <- Scripts to turn raw data into features for modeling
@@ -51,10 +52,11 @@ The directory structure of your new project looks like this:
 
 ## Contributing
 
-The creators of the Cookiecutter project welcome contributions! [See the docs for guidelines](https://drivendata.github.io/cookiecutter-data-science/#contributing).
+by Anna Makushkina, Magda Dubois, Marios Akritas, Wojciech Lason, Ferdinand Torron
 
 ### Installing development requirements
 ------------
 
     pip3 install -r requirements.txt
+
 
